@@ -15,7 +15,7 @@ $(document).ready(function(){
     };
 
     var q = getUrlParameter('q');
-    var url = "https://jaringlead.com/new-jaring/tracking/" ;
+    var url = "http://jala.ai/new-jaring/tracking/" ;
 
     if(typeof q != 'undefined'){
         var data = {
@@ -30,7 +30,7 @@ $(document).ready(function(){
             success: function (data) {
                 //window.location.href= data.redirect
                 $('#source').val(data.unique_code);
-                $('select[name=city]').html(data.htmlCity)
+                /*$('select[name=city]').html(data.htmlCity)*/
                 //console.log(data);
             }
         });
